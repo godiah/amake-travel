@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* ========================================
+       CUSTOM FONTS - Travel/Tour/Adventure Brand Typography
+    ======================================== */
+    
+    /* Font Families */
+    --font-sans: 'Lato', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-cursive: 'Dancing Script', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-body: 'Lato', ui-sans-serif, system-ui, sans-serif;
+    --font-ui: 'Lato', ui-sans-serif, system-ui, sans-serif;
+    
+    /* Alternative font names for easier usage */
+    --font-heading: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-script: 'Dancing Script', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    /* ========================================
+       CUSTOM COLORS - Wanderlust Coral + Forest Green Palette
+    ======================================== */
+    
+    /* Wanderlust Coral Scale */
+    --color-wanderlust-50: #fff5f3;
+    --color-wanderlust-100: #ffe8e4;
+    --color-wanderlust-200: #ffcfc7;
+    --color-wanderlust-300: #ffb4ab;
+    --color-wanderlust-400: #ff8a7a;
+    --color-wanderlust-500: #ff6b5a;  /* Primary Wanderlust Coral */
+    --color-wanderlust-600: #e55a4a;
+    --color-wanderlust-700: #cc4a3a;
+    --color-wanderlust-800: #b23a2a;
+    --color-wanderlust-900: #991f0f;
+
+    /* Forest Green Scale */
+    --color-forest-50: #ecfdf5;
+    --color-forest-100: #d1fae5;
+    --color-forest-200: #a7f3d0;
+    --color-forest-300: #6ee7b7;
+    --color-forest-400: #34d399;
+    --color-forest-500: #10b981;  /* Forest light */
+    --color-forest-600: #059669;
+    --color-forest-700: #047857;
+    --color-forest-800: #065f46;
+    --color-forest-900: #064e3b;  /* Primary Deep Forest */
+
+    /* Ocean Blue Scale */
+    --color-ocean-50: #eff6ff;
+    --color-ocean-100: #dbeafe;
+    --color-ocean-200: #bfdbfe;
+    --color-ocean-300: #93c5fd;
+    --color-ocean-400: #60a5fa;
+    --color-ocean-500: #3b82f6;  /* Ocean light */
+    --color-ocean-600: #2563eb;
+    --color-ocean-700: #1d4ed8;
+    --color-ocean-800: #1e40af;
+    --color-ocean-900: #1e3a8a;  /* Primary Ocean Depth */
+
+    /* Sandy Gold Scale */
+    --color-sand-50: #fffbeb;
+    --color-sand-100: #fef3c7;
+    --color-sand-200: #fde68a;
+    --color-sand-300: #fcd34d;  /* Gold light */
+    --color-sand-400: #fbbf24;
+    --color-sand-500: #f59e0b;  /* Primary Sandy Gold */
+    --color-sand-600: #d97706;
+    --color-sand-700: #b45309;
+    --color-sand-800: #92400e;
+    --color-sand-900: #78350f;
+
+    /* Quick Brand Access Colors */
+    --color-brand-coral: #ff6b5a;
+    --color-brand-forest: #064e3b;
+    --color-brand-ocean: #1e3a8a;
+    --color-brand-gold: #f59e0b;
+    --color-brand-coral-light: #ffb4ab;
+    --color-brand-forest-light: #10b981;
+    --color-brand-ocean-light: #3b82f6;
+    --color-brand-gold-light: #fcd34d;
+    
+    /* Supporting Brand Colors */
+    --color-brand-cream: #fffbeb;
+    --color-brand-light-gray: #f8fafc;
+    --color-brand-medium-gray: #64748b;
+    --color-brand-dark-gray: #334155;
+
+    /* ========================================
+       CUSTOM FONT SIZES - Travel Brand Typography Scale
+    ======================================== */
+    
+    /* Hero and main headlines */
+    --font-size-hero: 4rem;          /* 64px */
+    --font-size-hero-sm: 3.5rem;     /* 56px */
+    
+    /* Display headings */
+    --font-size-display: 3rem;       /* 48px */
+    --font-size-display-sm: 2.5rem;  /* 40px */
+    
+    /* Section headings */
+    --font-size-heading: 2rem;       /* 32px */
+    --font-size-heading-sm: 1.75rem; /* 28px */
+    
+    /* Cursive accents */
+    --font-size-cursive-lg: 2.25rem; /* 36px */
+    --font-size-cursive: 1.875rem;   /* 30px */
+    --font-size-cursive-sm: 1.5rem;  /* 24px */
+    
+    /* Body text */
+    --font-size-body-lg: 1.125rem;   /* 18px */
+    --font-size-body: 1rem;          /* 16px */
+    --font-size-body-sm: 0.875rem;   /* 14px */
+    
+    /* UI elements */
+    --font-size-button: 0.9rem;      /* 14.4px */
+    --font-size-caption: 0.75rem;    /* 12px */
+
+    /* ========================================
+       CUSTOM LINE HEIGHTS
+    ======================================== */
+    
+    --line-height-hero: 1.1;
+    --line-height-display: 1.2;
+    --line-height-heading: 1.3;
+    --line-height-cursive: 1.4;
+    --line-height-body: 1.6;
+    --line-height-body-sm: 1.5;
+    --line-height-button: 1.4;
+
+    /* ========================================
+       CUSTOM LETTER SPACING
+    ======================================== */
+    
+    --letter-spacing-hero: -0.02em;
+    --letter-spacing-display: -0.01em;
+    --letter-spacing-normal: 0em;
+
+    /* ========================================
+       CUSTOM SPACING - Travel Layout Scale
+    ======================================== */
+    
+    --spacing-18: 4.5rem;   /* 72px */
+    --spacing-72: 18rem;    /* 288px */
+    --spacing-84: 21rem;    /* 336px */
+    --spacing-96: 24rem;    /* 384px */
+    --spacing-128: 32rem;   /* 512px */
+
+    /* ========================================
+       CUSTOM SHADOWS - Travel Brand Shadows
+    ======================================== */
+    
+    --shadow-travel: 0 4px 6px -1px rgba(255, 107, 90, 0.1), 0 2px 4px -1px rgba(255, 107, 90, 0.06);
+    --shadow-travel-lg: 0 10px 15px -3px rgba(255, 107, 90, 0.1), 0 4px 6px -2px rgba(255, 107, 90, 0.05);
+    --shadow-forest: 0 4px 6px -1px rgba(6, 78, 59, 0.1), 0 2px 4px -1px rgba(6, 78, 59, 0.06);
+    --shadow-ocean: 0 4px 6px -1px rgba(30, 58, 138, 0.1), 0 2px 4px -1px rgba(30, 58, 138, 0.06);
+
+    /* ========================================
+       CUSTOM ANIMATIONS
+    ======================================== */
+    
+    --animate-fade-in: fadeIn 0.5s ease-in-out;
+    --animate-slide-up: slideUp 0.6s ease-out;
+    --animate-bounce-gentle: bounceGentle 2s infinite;
+}
+
+/* ========================================
+   CUSTOM UTILITY CLASSES
+======================================== */
+
+/* Typography Utility Classes */
+.text-hero {
+    font-size: var(--font-size-hero);
+    line-height: var(--line-height-hero);
+    letter-spacing: var(--letter-spacing-hero);
+}
+
+.text-hero-sm {
+    font-size: var(--font-size-hero-sm);
+    line-height: var(--line-height-hero);
+    letter-spacing: var(--letter-spacing-hero);
+}
+
+.text-display {
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-display);
+    letter-spacing: var(--letter-spacing-display);
+}
+
+.text-display-sm {
+    font-size: var(--font-size-display-sm);
+    line-height: var(--line-height-display);
+    letter-spacing: var(--letter-spacing-display);
+}
+
+.text-heading {
+    font-size: var(--font-size-heading);
+    line-height: var(--line-height-heading);
+}
+
+.text-heading-sm {
+    font-size: var(--font-size-heading-sm);
+    line-height: var(--line-height-heading);
+}
+
+.text-cursive-lg {
+    font-size: var(--font-size-cursive-lg);
+    line-height: var(--line-height-cursive);
+}
+
+.text-cursive {
+    font-size: var(--font-size-cursive);
+    line-height: var(--line-height-cursive);
+}
+
+.text-cursive-sm {
+    font-size: var(--font-size-cursive-sm);
+    line-height: var(--line-height-cursive);
+}
+
+.text-body-lg {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body);
+}
+
+.text-body {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+}
+
+.text-body-sm {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--line-height-body-sm);
+}
+
+.text-button {
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button);
+    font-weight: 600;
+}
+
+.text-caption {
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-button);
+}
+
+/* Background Gradient Classes */
+.bg-wanderlust-gradient {
+    background: linear-gradient(135deg, var(--color-wanderlust-500) 0%, var(--color-sand-500) 100%);
+}
+
+.bg-forest-gradient {
+    background: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-500) 100%);
+}
+
+.bg-ocean-gradient {
+    background: linear-gradient(135deg, var(--color-ocean-900) 0%, var(--color-ocean-500) 100%);
+}
+
+.bg-sunset-gradient {
+    background: linear-gradient(135deg, var(--color-wanderlust-500) 0%, var(--color-sand-500) 50%, var(--color-wanderlust-300) 100%);
+}
+
+.bg-nature-gradient {
+    background: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-500) 50%, var(--color-ocean-400) 100%);
+}
+
+/* Custom Shadow Classes */
+.shadow-travel {
+    box-shadow: var(--shadow-travel);
+}
+
+.shadow-travel-lg {
+    box-shadow: var(--shadow-travel-lg);
+}
+
+.shadow-forest {
+    box-shadow: var(--shadow-forest);
+}
+
+.shadow-ocean {
+    box-shadow: var(--shadow-ocean);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes slideUp {
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes bounceGentle {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-5px); 
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: var(--animate-fade-in);
+}
+
+.animate-slide-up {
+    animation: var(--animate-slide-up);
+}
+
+.animate-bounce-gentle {
+    animation: var(--animate-bounce-gentle);
+}
+
+/* Hover Effect Classes */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Brand Color Utility Classes for Quick Access */
+.bg-brand-coral { background-color: var(--color-brand-coral); }
+.bg-brand-forest { background-color: var(--color-brand-forest); }
+.bg-brand-ocean { background-color: var(--color-brand-ocean); }
+.bg-brand-gold { background-color: var(--color-brand-gold); }
+.bg-brand-coral-light { background-color: var(--color-brand-coral-light); }
+.bg-brand-forest-light { background-color: var(--color-brand-forest-light); }
+.bg-brand-ocean-light { background-color: var(--color-brand-ocean-light); }
+.bg-brand-gold-light { background-color: var(--color-brand-gold-light); }
+.bg-brand-cream { background-color: var(--color-brand-cream); }
+.bg-brand-light-gray { background-color: var(--color-brand-light-gray); }
+.bg-brand-medium-gray { background-color: var(--color-brand-medium-gray); }
+.bg-brand-dark-gray { background-color: var(--color-brand-dark-gray); }
+
+.text-brand-coral { color: var(--color-brand-coral); }
+.text-brand-forest { color: var(--color-brand-forest); }
+.text-brand-ocean { color: var(--color-brand-ocean); }
+.text-brand-gold { color: var(--color-brand-gold); }
+.text-brand-coral-light { color: var(--color-brand-coral-light); }
+.text-brand-forest-light { color: var(--color-brand-forest-light); }
+.text-brand-ocean-light { color: var(--color-brand-ocean-light); }
+.text-brand-gold-light { color: var(--color-brand-gold-light); }
+.text-brand-cream { color: var(--color-brand-cream); }
+.text-brand-light-gray { color: var(--color-brand-light-gray); }
+.text-brand-medium-gray { color: var(--color-brand-medium-gray); }
+.text-brand-dark-gray { color: var(--color-brand-dark-gray); }
+
+.border-brand-coral { border-color: var(--color-brand-coral); }
+.border-brand-forest { border-color: var(--color-brand-forest); }
+.border-brand-ocean { border-color: var(--color-brand-ocean); }
+.border-brand-gold { border-color: var(--color-brand-gold); }
