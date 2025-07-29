@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -10,29 +10,35 @@
     /* ========================================
        CUSTOM FONTS - Travel/Tour/Adventure Brand Typography
     ======================================== */
-    
+
     /* Font Families */
-    --font-sans: 'Lato', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-display: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-cursive: 'Dancing Script', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-body: 'Lato', ui-sans-serif, system-ui, sans-serif;
-    --font-ui: 'Lato', ui-sans-serif, system-ui, sans-serif;
-    
+    --font-sans: "Lato", "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-display: "Playfair Display", ui-serif, Georgia, Cambria,
+        "Times New Roman", Times, serif;
+    --font-cursive: "Dancing Script", ui-serif, Georgia, Cambria,
+        "Times New Roman", Times, serif;
+    --font-body: "Lato", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Lato", ui-sans-serif, system-ui, sans-serif;
+
     /* Alternative font names for easier usage */
-    --font-heading: 'Playfair Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-script: 'Dancing Script', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-heading: "Playfair Display", ui-serif, Georgia, Cambria,
+        "Times New Roman", Times, serif;
+    --font-script: "Dancing Script", ui-serif, Georgia, Cambria,
+        "Times New Roman", Times, serif;
 
     /* ========================================
        CUSTOM COLORS - Wanderlust Coral + Forest Green Palette
     ======================================== */
-    
+
     /* Wanderlust Coral Scale */
     --color-wanderlust-50: #fff5f3;
     --color-wanderlust-100: #ffe8e4;
     --color-wanderlust-200: #ffcfc7;
     --color-wanderlust-300: #ffb4ab;
     --color-wanderlust-400: #ff8a7a;
-    --color-wanderlust-500: #ff6b5a;  /* Primary Wanderlust Coral */
+    --color-wanderlust-500: #ff6b5a; /* Primary Wanderlust Coral */
     --color-wanderlust-600: #e55a4a;
     --color-wanderlust-700: #cc4a3a;
     --color-wanderlust-800: #b23a2a;
@@ -44,11 +50,11 @@
     --color-forest-200: #a7f3d0;
     --color-forest-300: #6ee7b7;
     --color-forest-400: #34d399;
-    --color-forest-500: #10b981;  /* Forest light */
+    --color-forest-500: #10b981; /* Forest light */
     --color-forest-600: #059669;
     --color-forest-700: #047857;
     --color-forest-800: #065f46;
-    --color-forest-900: #064e3b;  /* Primary Deep Forest */
+    --color-forest-900: #064e3b; /* Primary Deep Forest */
 
     /* Ocean Blue Scale */
     --color-ocean-50: #eff6ff;
@@ -56,19 +62,19 @@
     --color-ocean-200: #bfdbfe;
     --color-ocean-300: #93c5fd;
     --color-ocean-400: #60a5fa;
-    --color-ocean-500: #3b82f6;  /* Ocean light */
+    --color-ocean-500: #3b82f6; /* Ocean light */
     --color-ocean-600: #2563eb;
     --color-ocean-700: #1d4ed8;
     --color-ocean-800: #1e40af;
-    --color-ocean-900: #1e3a8a;  /* Primary Ocean Depth */
+    --color-ocean-900: #1e3a8a; /* Primary Ocean Depth */
 
     /* Sandy Gold Scale */
     --color-sand-50: #fffbeb;
     --color-sand-100: #fef3c7;
     --color-sand-200: #fde68a;
-    --color-sand-300: #fcd34d;  /* Gold light */
+    --color-sand-300: #fcd34d; /* Gold light */
     --color-sand-400: #fbbf24;
-    --color-sand-500: #f59e0b;  /* Primary Sandy Gold */
+    --color-sand-500: #f59e0b; /* Primary Sandy Gold */
     --color-sand-600: #d97706;
     --color-sand-700: #b45309;
     --color-sand-800: #92400e;
@@ -83,7 +89,7 @@
     --color-brand-forest-light: #10b981;
     --color-brand-ocean-light: #3b82f6;
     --color-brand-gold-light: #fcd34d;
-    
+
     /* Supporting Brand Colors */
     --color-brand-cream: #fffbeb;
     --color-brand-light-gray: #f8fafc;
@@ -93,37 +99,37 @@
     /* ========================================
        CUSTOM FONT SIZES - Travel Brand Typography Scale
     ======================================== */
-    
+
     /* Hero and main headlines */
-    --font-size-hero: 4rem;          /* 64px */
-    --font-size-hero-sm: 3.5rem;     /* 56px */
-    
+    --font-size-hero: 4rem; /* 64px */
+    --font-size-hero-sm: 3.5rem; /* 56px */
+
     /* Display headings */
-    --font-size-display: 3rem;       /* 48px */
-    --font-size-display-sm: 2.5rem;  /* 40px */
-    
+    --font-size-display: 3rem; /* 48px */
+    --font-size-display-sm: 2.5rem; /* 40px */
+
     /* Section headings */
-    --font-size-heading: 2rem;       /* 32px */
+    --font-size-heading: 2rem; /* 32px */
     --font-size-heading-sm: 1.75rem; /* 28px */
-    
+
     /* Cursive accents */
     --font-size-cursive-lg: 2.25rem; /* 36px */
-    --font-size-cursive: 1.875rem;   /* 30px */
-    --font-size-cursive-sm: 1.5rem;  /* 24px */
-    
+    --font-size-cursive: 1.875rem; /* 30px */
+    --font-size-cursive-sm: 1.5rem; /* 24px */
+
     /* Body text */
-    --font-size-body-lg: 1.125rem;   /* 18px */
-    --font-size-body: 1rem;          /* 16px */
-    --font-size-body-sm: 0.875rem;   /* 14px */
-    
+    --font-size-body-lg: 1.125rem; /* 18px */
+    --font-size-body: 1rem; /* 16px */
+    --font-size-body-sm: 0.875rem; /* 14px */
+
     /* UI elements */
-    --font-size-button: 0.9rem;      /* 14.4px */
-    --font-size-caption: 0.75rem;    /* 12px */
+    --font-size-button: 0.9rem; /* 14.4px */
+    --font-size-caption: 0.75rem; /* 12px */
 
     /* ========================================
        CUSTOM LINE HEIGHTS
     ======================================== */
-    
+
     --line-height-hero: 1.1;
     --line-height-display: 1.2;
     --line-height-heading: 1.3;
@@ -135,7 +141,7 @@
     /* ========================================
        CUSTOM LETTER SPACING
     ======================================== */
-    
+
     --letter-spacing-hero: -0.02em;
     --letter-spacing-display: -0.01em;
     --letter-spacing-normal: 0em;
@@ -143,29 +149,58 @@
     /* ========================================
        CUSTOM SPACING - Travel Layout Scale
     ======================================== */
-    
-    --spacing-18: 4.5rem;   /* 72px */
-    --spacing-72: 18rem;    /* 288px */
-    --spacing-84: 21rem;    /* 336px */
-    --spacing-96: 24rem;    /* 384px */
-    --spacing-128: 32rem;   /* 512px */
+
+    --spacing-18: 4.5rem; /* 72px */
+    --spacing-72: 18rem; /* 288px */
+    --spacing-84: 21rem; /* 336px */
+    --spacing-96: 24rem; /* 384px */
+    --spacing-128: 32rem; /* 512px */
 
     /* ========================================
        CUSTOM SHADOWS - Travel Brand Shadows
     ======================================== */
-    
-    --shadow-travel: 0 4px 6px -1px rgba(255, 107, 90, 0.1), 0 2px 4px -1px rgba(255, 107, 90, 0.06);
-    --shadow-travel-lg: 0 10px 15px -3px rgba(255, 107, 90, 0.1), 0 4px 6px -2px rgba(255, 107, 90, 0.05);
-    --shadow-forest: 0 4px 6px -1px rgba(6, 78, 59, 0.1), 0 2px 4px -1px rgba(6, 78, 59, 0.06);
-    --shadow-ocean: 0 4px 6px -1px rgba(30, 58, 138, 0.1), 0 2px 4px -1px rgba(30, 58, 138, 0.06);
+
+    --shadow-travel: 0 4px 6px -1px rgba(255, 107, 90, 0.1),
+        0 2px 4px -1px rgba(255, 107, 90, 0.06);
+    --shadow-travel-lg: 0 10px 15px -3px rgba(255, 107, 90, 0.1),
+        0 4px 6px -2px rgba(255, 107, 90, 0.05);
+    --shadow-forest: 0 4px 6px -1px rgba(6, 78, 59, 0.1),
+        0 2px 4px -1px rgba(6, 78, 59, 0.06);
+    --shadow-ocean: 0 4px 6px -1px rgba(30, 58, 138, 0.1),
+        0 2px 4px -1px rgba(30, 58, 138, 0.06);
 
     /* ========================================
        CUSTOM ANIMATIONS
     ======================================== */
-    
+
     --animate-fade-in: fadeIn 0.5s ease-in-out;
     --animate-slide-up: slideUp 0.6s ease-out;
     --animate-bounce-gentle: bounceGentle 2s infinite;
+}
+/* Navigation Bar */
+.navbar-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 107, 90, 0.2);
+    box-shadow: 0 8px 32px rgba(6, 78, 59, 0.08);
+}
+
+.mobile-menu-blur {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Brand typography classes */
+.font-display {
+    font-family: var(--font-display);
+}
+.font-body {
+    font-family: var(--font-body);
+}
+.font-script {
+    font-family: var(--font-script);
 }
 
 /* ========================================
@@ -250,23 +285,45 @@
 
 /* Background Gradient Classes */
 .bg-wanderlust-gradient {
-    background: linear-gradient(135deg, var(--color-wanderlust-500) 0%, var(--color-sand-500) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-wanderlust-500) 0%,
+        var(--color-sand-500) 100%
+    );
 }
 
 .bg-forest-gradient {
-    background: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-500) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-forest-900) 0%,
+        var(--color-forest-500) 100%
+    );
 }
 
 .bg-ocean-gradient {
-    background: linear-gradient(135deg, var(--color-ocean-900) 0%, var(--color-ocean-500) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-ocean-900) 0%,
+        var(--color-ocean-500) 100%
+    );
 }
 
 .bg-sunset-gradient {
-    background: linear-gradient(135deg, var(--color-wanderlust-500) 0%, var(--color-sand-500) 50%, var(--color-wanderlust-300) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-wanderlust-500) 0%,
+        var(--color-sand-500) 50%,
+        var(--color-wanderlust-300) 100%
+    );
 }
 
 .bg-nature-gradient {
-    background: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-500) 50%, var(--color-ocean-400) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--color-forest-900) 0%,
+        var(--color-forest-500) 50%,
+        var(--color-ocean-400) 100%
+    );
 }
 
 /* Custom Shadow Classes */
@@ -288,33 +345,34 @@
 
 /* Animation Keyframes */
 @keyframes fadeIn {
-    0% { 
-        opacity: 0; 
-        transform: translateY(10px); 
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
     }
-    100% { 
-        opacity: 1; 
-        transform: translateY(0); 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @keyframes slideUp {
-    0% { 
-        opacity: 0; 
-        transform: translateY(20px); 
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    100% { 
-        opacity: 1; 
-        transform: translateY(0); 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 @keyframes bounceGentle {
-    0%, 100% { 
-        transform: translateY(0); 
+    0%,
+    100% {
+        transform: translateY(0);
     }
-    50% { 
-        transform: translateY(-5px); 
+    50% {
+        transform: translateY(-5px);
     }
 }
 
@@ -343,33 +401,690 @@
 }
 
 /* Brand Color Utility Classes for Quick Access */
-.bg-brand-coral { background-color: var(--color-brand-coral); }
-.bg-brand-forest { background-color: var(--color-brand-forest); }
-.bg-brand-ocean { background-color: var(--color-brand-ocean); }
-.bg-brand-gold { background-color: var(--color-brand-gold); }
-.bg-brand-coral-light { background-color: var(--color-brand-coral-light); }
-.bg-brand-forest-light { background-color: var(--color-brand-forest-light); }
-.bg-brand-ocean-light { background-color: var(--color-brand-ocean-light); }
-.bg-brand-gold-light { background-color: var(--color-brand-gold-light); }
-.bg-brand-cream { background-color: var(--color-brand-cream); }
-.bg-brand-light-gray { background-color: var(--color-brand-light-gray); }
-.bg-brand-medium-gray { background-color: var(--color-brand-medium-gray); }
-.bg-brand-dark-gray { background-color: var(--color-brand-dark-gray); }
+.bg-brand-coral {
+    background-color: var(--color-brand-coral);
+}
+.bg-brand-forest {
+    background-color: var(--color-brand-forest);
+}
+.bg-brand-ocean {
+    background-color: var(--color-brand-ocean);
+}
+.bg-brand-gold {
+    background-color: var(--color-brand-gold);
+}
+.bg-brand-coral-light {
+    background-color: var(--color-brand-coral-light);
+}
+.bg-brand-forest-light {
+    background-color: var(--color-brand-forest-light);
+}
+.bg-brand-ocean-light {
+    background-color: var(--color-brand-ocean-light);
+}
+.bg-brand-gold-light {
+    background-color: var(--color-brand-gold-light);
+}
+.bg-brand-cream {
+    background-color: var(--color-brand-cream);
+}
+.bg-brand-light-gray {
+    background-color: var(--color-brand-light-gray);
+}
+.bg-brand-medium-gray {
+    background-color: var(--color-brand-medium-gray);
+}
+.bg-brand-dark-gray {
+    background-color: var(--color-brand-dark-gray);
+}
 
-.text-brand-coral { color: var(--color-brand-coral); }
-.text-brand-forest { color: var(--color-brand-forest); }
-.text-brand-ocean { color: var(--color-brand-ocean); }
-.text-brand-gold { color: var(--color-brand-gold); }
-.text-brand-coral-light { color: var(--color-brand-coral-light); }
-.text-brand-forest-light { color: var(--color-brand-forest-light); }
-.text-brand-ocean-light { color: var(--color-brand-ocean-light); }
-.text-brand-gold-light { color: var(--color-brand-gold-light); }
-.text-brand-cream { color: var(--color-brand-cream); }
-.text-brand-light-gray { color: var(--color-brand-light-gray); }
-.text-brand-medium-gray { color: var(--color-brand-medium-gray); }
-.text-brand-dark-gray { color: var(--color-brand-dark-gray); }
+.text-brand-coral {
+    color: var(--color-brand-coral);
+}
+.text-brand-forest {
+    color: var(--color-brand-forest);
+}
+.text-brand-ocean {
+    color: var(--color-brand-ocean);
+}
+.text-brand-gold {
+    color: var(--color-brand-gold);
+}
+.text-brand-coral-light {
+    color: var(--color-brand-coral-light);
+}
+.text-brand-forest-light {
+    color: var(--color-brand-forest-light);
+}
+.text-brand-ocean-light {
+    color: var(--color-brand-ocean-light);
+}
+.text-brand-gold-light {
+    color: var(--color-brand-gold-light);
+}
+.text-brand-cream {
+    color: var(--color-brand-cream);
+}
+.text-brand-light-gray {
+    color: var(--color-brand-light-gray);
+}
+.text-brand-medium-gray {
+    color: var(--color-brand-medium-gray);
+}
+.text-brand-dark-gray {
+    color: var(--color-brand-dark-gray);
+}
 
-.border-brand-coral { border-color: var(--color-brand-coral); }
-.border-brand-forest { border-color: var(--color-brand-forest); }
-.border-brand-ocean { border-color: var(--color-brand-ocean); }
-.border-brand-gold { border-color: var(--color-brand-gold); }
+.border-brand-coral {
+    border-color: var(--color-brand-coral);
+}
+.border-brand-forest {
+    border-color: var(--color-brand-forest);
+}
+.border-brand-ocean {
+    border-color: var(--color-brand-ocean);
+}
+.border-brand-gold {
+    border-color: var(--color-brand-gold);
+}
+
+/* Adventure Section */
+.floating-orb-forest {
+    background: radial-gradient(
+        circle,
+        var(--color-forest-300),
+        var(--color-forest-500)
+    );
+}
+
+.floating-orb-coral {
+    background: radial-gradient(
+        circle,
+        var(--color-wanderlust-300),
+        var(--color-wanderlust-500)
+    );
+}
+
+.floating-orb-sand {
+    background: radial-gradient(
+        circle,
+        var(--color-sand-300),
+        var(--color-sand-500)
+    );
+}
+
+.floating-orb-ocean {
+    background: radial-gradient(
+        circle,
+        var(--color-ocean-300),
+        var(--color-ocean-500)
+    );
+}
+
+.geometric-shape-gradient {
+    background: linear-gradient(
+        45deg,
+        var(--color-forest-400),
+        var(--color-wanderlust-400)
+    );
+}
+
+.sand-dot {
+    background: var(--color-sand-400);
+}
+
+.section-divider {
+    background: linear-gradient(
+        90deg,
+        var(--color-wanderlust-500),
+        var(--color-forest-500)
+    );
+}
+
+.card-tag-forest {
+    background: var(--color-forest-50);
+    color: var(--color-forest-700);
+}
+
+.card-tag-coral {
+    background: rgba(255, 107, 90, 0.1);
+    color: var(--color-brand-coral);
+}
+
+.card-tag-ocean {
+    background: var(--color-ocean-50);
+    color: var(--color-ocean-700);
+}
+
+.btn-gradient-coral {
+    background: linear-gradient(
+        135deg,
+        var(--color-brand-coral),
+        var(--color-wanderlust-600)
+    );
+    box-shadow: 0 4px 15px rgba(255, 107, 90, 0.3);
+}
+
+.safety-banner-bg {
+    background: linear-gradient(
+        135deg,
+        var(--color-forest-900) 0%,
+        var(--color-forest-600) 50%,
+        var(--color-ocean-900) 100%
+    );
+}
+
+.safety-orb-coral {
+    background: var(--color-wanderlust-400);
+}
+
+.safety-orb-sand {
+    background: var(--color-sand-400);
+}
+
+/* Original animations from your design */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceGentle {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Dynamic Background Animations */
+.bg-pattern {
+    background: linear-gradient(
+        135deg,
+        #fff5f3 0%,
+        #ecfdf5 25%,
+        #eff6ff 50%,
+        #fffbeb 75%,
+        #fff5f3 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.floating-orb {
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-orb:nth-child(odd) {
+    animation-delay: -3s;
+    animation-direction: reverse;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+.geometric-pattern {
+    background-image: radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 107, 90, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(6, 78, 59, 0.1) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 40% 60%,
+            rgba(59, 130, 246, 0.1) 0%,
+            transparent 50%
+        );
+}
+
+
+
+/* Testimonials */
+/* Animated background */
+.testimonials-bg {
+    background: linear-gradient(135deg, #ffffff 0%, var(--color-forest-50) 35%, var(--color-wanderlust-50) 65%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 90, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(6, 78, 59, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(30, 58, 138, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Floating elements animation */
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.floating-element:nth-child(3) {
+    animation-delay: -4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-20px) rotate(1deg); }
+    66% { transform: translateY(10px) rotate(-1deg); }
+}
+
+/* Custom animations */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card hover effects */
+.testimonial-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Video play button pulse */
+.play-button {
+    animation: pulsePlay 2s infinite;
+}
+
+@keyframes pulsePlay {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 90, 0.4); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(255, 107, 90, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 107, 90, 0); }
+}
+
+/* Counter animation */
+.counter {
+    font-weight: 700;
+}
+
+/* Trust badges subtle animation */
+.trust-stat {
+    transition: transform 0.3s ease;
+}
+
+.trust-stat:hover {
+    transform: translateY(-2px);
+}
+
+/* About */
+/* Creative layered background */
+.about-bg {
+    background: linear-gradient(135deg, var(--color-forest-50) 0%, #ffffff 25%, var(--color-wanderlust-50) 50%, #ffffff 75%, var(--color-ocean-50) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at 10% 20%, rgba(255, 107, 90, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse at 90% 80%, rgba(6, 78, 59, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse at 50% 50%, rgba(30, 58, 138, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Dynamic shape background elements */
+.shape-background {
+    position: absolute;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.shape-1 {
+    top: 10%;
+    left: 5%;
+    width: 200px;
+    height: 200px;
+    background: var(--color-wanderlust-500);
+    border-radius: 50% 25% 50% 25%;
+    animation: morphShape 20s ease-in-out infinite;
+}
+
+.shape-2 {
+    top: 60%;
+    right: 8%;
+    width: 150px;
+    height: 300px;
+    background: var(--color-forest-500);
+    border-radius: 25% 75% 25% 75%;
+    animation: morphShape 25s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    bottom: 20%;
+    left: 15%;
+    width: 180px;
+    height: 180px;
+    background: var(--color-ocean-500);
+    border-radius: 75% 25% 75% 25%;
+    animation: morphShape 30s ease-in-out infinite;
+}
+
+@keyframes morphShape {
+    0%, 100% { 
+        transform: rotate(0deg) scale(1);
+        border-radius: 50% 25% 50% 25%;
+    }
+    25% { 
+        transform: rotate(90deg) scale(1.1);
+        border-radius: 25% 75% 25% 75%;
+    }
+    50% { 
+        transform: rotate(180deg) scale(0.9);
+        border-radius: 75% 25% 75% 25%;
+    }
+    75% { 
+        transform: rotate(270deg) scale(1.05);
+        border-radius: 25% 50% 25% 50%;
+    }
+}
+
+/* Floating elements animation */
+.floating-element {
+    animation: float 8s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2) { animation-delay: -2s; }
+.floating-element:nth-child(3) { animation-delay: -4s; }
+.floating-element:nth-child(4) { animation-delay: -6s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+    25% { transform: translateY(-15px) translateX(5px) rotate(1deg); }
+    50% { transform: translateY(-25px) translateX(-5px) rotate(-1deg); }
+    75% { transform: translateY(-10px) translateX(3px) rotate(0.5deg); }
+}
+
+/* Enhanced animations */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease-out forwards;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced card effects */
+.story-card {
+    backdrop-filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.story-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.team-member {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.team-member:hover::before {
+    left: 100%;
+}
+
+.team-member:hover {
+    transform: translateY(-8px) rotateY(5deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Values section gradient */
+.values-gradient {
+    background: linear-gradient(135deg, var(--color-forest-900) 0%, var(--color-forest-800) 30%, var(--color-ocean-900) 70%, var(--color-forest-900) 100%);
+    position: relative;
+}
+
+.values-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 107, 90, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Counter animation */
+.counter {
+    font-weight: 700;
+}
+
+/* Parallax effect for background elements */
+.parallax-element {
+    transition: transform 0.1s ease-out;
+}
+
+/* Social icons hover */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tag animations */
+.skill-tag {
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact background */
+.contact-bg {
+    background: linear-gradient(135deg, #ffffff 0%, var(--color-forest-50) 25%, var(--color-wanderlust-50) 50%, var(--color-ocean-50) 75%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 15% 25%, rgba(255, 107, 90, 0.06) 0%, transparent 60%),
+        radial-gradient(circle at 85% 75%, rgba(6, 78, 59, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 50% 50%, rgba(30, 58, 138, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+/* Floating elements animation */
+.floating-element {
+    animation: gentleFloat 12s ease-in-out infinite;
+}
+
+.floating-element:nth-child(2) { animation-delay: -4s; }
+.floating-element:nth-child(3) { animation-delay: -8s; }
+
+@keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-15px) rotate(2deg); }
+    66% { transform: translateY(8px) rotate(-2deg); }
+}
+
+/* Contact item animations */
+.contact-item {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-item:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Social media specific colors and hover effects */
+.social-whatsapp:hover { background-color: #25D366; color: white; }
+.social-instagram:hover { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; }
+.social-twitter:hover { background-color: #1DA1F2; color: white; }
+.social-facebook:hover { background-color: #1877F2; color: white; }
+.social-tiktok:hover { background-color: #000000; color: white; }
+
+/* Icon containers */
+.icon-container {
+    transition: all 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Fade in animations */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse effect for call-to-action */
+.pulse-gentle {
+    animation: pulseGentle 3s ease-in-out infinite;
+}
+
+@keyframes pulseGentle {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 90, 0.3); }
+    50% { box-shadow: 0 0 0 15px rgba(255, 107, 90, 0); }
+}
