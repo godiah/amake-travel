@@ -258,9 +258,8 @@
                     </svg>
                     <span class="text-sm font-medium text-brand-gold">24/7 Emergency</span>
                 </div>
-                <a href="tel:+254700123456"
-                    class="text-sm text-brand-forest hover:text-brand-coral transition-colors duration-300">+254
-                    70000000
+                <a href="tel:+254721909351"
+                    class="text-sm text-brand-forest hover:text-brand-coral transition-colors duration-300">+254 721 909 351                    
                 </a>
             </div>
         </div>
